@@ -40,10 +40,6 @@ class disjoint{
    
 };
 
-class Solution
-{
-	public:
-	//Function to find sum of weights of edges of the Minimum Spanning Tree.
     void spanningTree(int V, vector<vector<int>> adj[])
     {
         vector<pair<int,pair<int,int>>>edges;
@@ -77,7 +73,7 @@ class Solution
         } 
         
     }
-};
+
 
 int main(){
 
@@ -104,7 +100,7 @@ cout<<"Enter component of graph\n";
         }
 
        cout<<" Edges to be considered in minimum spanning tree are\n";
-        Solution obj;
-         obj.spanningTree(vertex,adj);
+       
+         spanningTree(vertex,adj);
 return 0;
 }
