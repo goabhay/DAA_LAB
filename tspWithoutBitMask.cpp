@@ -16,7 +16,7 @@ int  dfs(vector<pair<int,int>>adj[],int curr_node,vector<int>visit,int start,int
     }
 
     
-int ans=INT_MAX;
+int ans=1e5;
     for(auto x:adj[curr_node]){
 
         if(find(visit.begin(),visit.end(),x.first)==visit.end()){
